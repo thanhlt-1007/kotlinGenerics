@@ -67,4 +67,9 @@ fun main() {
 
   val topPet = petContest.getWinners().first()
   println("Pet contest winner is ${topPet.name}")
+
+  val dogRetailer: Retailer<Dog> = DogRetailer()
+  val catRetailer: Retailer<Cat> = CatRetailer()
+  val petRetailer: Retailer<Pet> = CatRetailer()
+  petRetailer.sell()
 }
